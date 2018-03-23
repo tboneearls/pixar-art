@@ -10,12 +10,12 @@ $("#set-color").on("click", function (event) {
 	event.preventDefault();
 })
 
-for (let i = 0; i < 20; i++){
+for (let i = 0; i < 8000; i++){
 	// create 20 divs
 	// add .square class
 	// append to body
 	$("<div>").addClass("square").appendTo("body");
 }
-$(".square").on("click", function(event) {
+$(".square").on("mouseover", function(event) {
 	$(this).css("background-color", $("input").val());
 })
