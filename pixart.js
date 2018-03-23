@@ -16,3 +16,6 @@ for (let i = 0; i < 20; i++){
 	// append to body
 	$("<div>").addClass("square").appendTo("body");
 }
+$(".square").on("click", function(event) {
+	$(this).css("background-color", "green");
+})
